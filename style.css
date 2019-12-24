@@ -1,0 +1,13 @@
+.logowrapper,.my{
+  transition:.5s
+}
+.dataTables_filter {
+   float:left;
+}
+input[type=search] {
+   -moz-appearance:none;
+   -webkit-appearance:none;
+}
+.bg-gray{
+  background-color: gray;
+}
