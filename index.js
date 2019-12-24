@@ -4,6 +4,7 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import Hello from './Hello';
 import Header from './components/homepage/Header';
 import Dashboard from'./components/Patient/dashboard';
+import MyDashboard from './components/dashboard/dashboard'
 import {Receptionist,patient} from './components/Patient/data.js';
 import './style.css';
 
@@ -20,6 +21,11 @@ class App extends Component {
    // alert(Receptionist)
     return (
       <BrowserRouter>
+        <Route
+      path='/dashboard'
+      render={()=>
+      <MyDashboard />}
+/>
       <Route
       path='/patient'
       render={()=>
